@@ -1,0 +1,7 @@
+def factorial(n):
+    res = 1
+    for i in range(1, n):
+        res *= i  # ❌ Misses multiplying by n itself
+    return res
+
+print(factorial(5))  # Expected 120
